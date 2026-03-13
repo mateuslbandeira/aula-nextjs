@@ -12,6 +12,7 @@ function Home() {
         </div>
         <div className={styles.containerListas}>
             <h1>Atividades</h1>
+            <Link href="/atividade/atv-01">Atividade 1</Link>
         </div>
         </div>
     );
