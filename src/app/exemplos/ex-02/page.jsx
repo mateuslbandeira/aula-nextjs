@@ -13,6 +13,7 @@ function Home() {
       <div className={styles.conteinerExPosicao}>
         <div className={styles.divVermelha}></div>
         <div className={styles.divVerde}></div>
+        <div className={styles.divBranca}></div>
       </div>
     </div>
   );

@@ -1,0 +1,33 @@
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 1rem;
+    background-color: red;
+    animation: mudarCor 3s infinite;
+    cursor: pointer;
+    border: 0.2rem solid black;
+    
+}
+
+
+@keyframes mudarCor {
+  0%   { background-color: red; }
+  33%  { background-color: blue; }
+  66%  { background-color: green; }
+  100% { background-color: red; }
+}
+
+.contador {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.texto {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
