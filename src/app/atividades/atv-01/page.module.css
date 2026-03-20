@@ -1,12 +1,12 @@
 .containerTitulo {
-    color: blue;
+    color: red;
     text-decoration: underline;
     text-align: center;
     font-display: block;
 }
 
 .containerTexto {
-    color: pink;
+    color: blueviolet;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
 }
