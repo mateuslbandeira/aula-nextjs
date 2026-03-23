@@ -1,0 +1,44 @@
+.tituloPrincipal {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+  font-size: 200px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 8px 16px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  animation: mudarCor 3s infinite;
+  display: flex;
+  gap: 10px;
+  border: 0.2rem solid black;
+  flex: 1;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+
+@keyframes mudarCor {
+  0%   { background-color: rgb(233, 17, 17); }
+  25%  { background-color: rgb(8, 8, 221); }
+  50%  { background-color: rgb(5, 151, 5); }
+  75% { background-color: rgb(241, 241, 12) }
+  100% { background-color: rgb(233, 17, 17); }
+}
+
