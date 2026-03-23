@@ -5,16 +5,16 @@
     background-color: red;
     animation: mudarCor 3s infinite;
     cursor: pointer;
-    border: 0.2rem solid black;
-    
+    border: 0.2rem solid white;
+    color: white;
 }
 
 
 @keyframes mudarCor {
-  0%   { background-color: red; }
-  33%  { background-color: blue; }
-  66%  { background-color: green; }
-  100% { background-color: red; }
+  0%   { background-color: rgb(233, 17, 17); }
+  33%  { background-color: rgb(8, 8, 221); }
+  66%  { background-color: rgb(5, 151, 5); }
+  100% { background-color: rgb(233, 17, 17); }
 }
 
 .contador {
@@ -28,6 +28,6 @@
 }
 
 .texto {
-    font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-family: 'Inter', sans-serif;
 }

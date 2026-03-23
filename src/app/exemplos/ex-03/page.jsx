@@ -13,7 +13,8 @@ export default function Exemplo03() {
     return (
         <>
         <div className={styles.contador}>
-            <label>{`Contador: ${num}`}</label>            
+            <label className={styles.texto}>
+                {`Contador: ${num}`}</label>            
             <label onClick={() => handleIncrementa()} className ={styles.button} >+1</label>
         </div>
             
