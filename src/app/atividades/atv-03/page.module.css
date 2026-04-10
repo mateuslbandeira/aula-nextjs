@@ -41,21 +41,21 @@
 
 /* Cores */
 .green {
-  background-color: #1f8f2e;
+  background-color: green;
 }
 
 .blue {
-  background-color: #17a2b8;
+  background-color: rgb(0, 102, 255);
 }
 
 .orange {
-  background-color: #ff8c00;
+  background-color: rgb(255, 208, 0);
 }
 
 .red {
-  background-color: #dc3545;
+  background-color: red;
 }
 
 .gray {
-  background-color: #6c757d;
+  background-color: gray;
 }
