@@ -3,6 +3,7 @@
     flex-direction: column; 
     justify-content: center;
     height: 97vh;
+
 }
 
 .formulario {     
@@ -10,10 +11,12 @@
     flex-direction: column; 
     margin-top: 5rem;
     max-width: 40rem;
+    
 }
 
 .historico {
     margin: 2rem 0;
     display: flex;
     flex-direction: column;
+    
 }

@@ -15,45 +15,59 @@ function Atividade04() {
     e.preventDefault();
     if (!inputValue.produto || !inputValue.quantidade) return;
 
-    // Adiciona o novo item e gera um ID único
     const novoItem = { ...inputValue, id: Date.now() };
     setDadosCadastrados([...dadosCadastrados, novoItem]);
 
-    // Limpa os campos
     setInputValue({ id: '', quantidade: '', produto: '' });
   };
 
+  // 🔥 NOVA FUNÇÃO (remover item)
+  const removerItem = (id) => {
+    const novaLista = dadosCadastrados.filter(item => item.id !== id);
+    setDadosCadastrados(novaLista);
+  };
+
   return (
-    <div className={styles.container}>
-      <h1>Formulário básico</h1>
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <h1>Lista de Compras</h1>
 
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <input
-          type="number"
-          value={inputValue.quantidade}
-          onChange={(e) => setInputValue({ ...inputValue, quantidade: e.target.value })}
-          placeholder="Qtd"
-        />
-        <input
-          type="text"
-          value={inputValue.produto}
-          onChange={(e) => setInputValue({ ...inputValue, produto: e.target.value })}
-          placeholder="Produto..."
-        />
-        <button type="submit">Adicionar</button>
-      </form>
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <input
+            type="number"
+            value={inputValue.quantidade}
+            onChange={(e) => setInputValue({ ...inputValue, quantidade: e.target.value })}
+            placeholder="Qtd"
+          />
+          <input
+            type="text"
+            value={inputValue.produto}
+            onChange={(e) => setInputValue({ ...inputValue, produto: e.target.value })}
+            placeholder="Produto..."
+          />
+          <button type="submit">Adicionar</button>
+        </form>
 
-      {dadosCadastrados.length > 0 && <h2>Lista de compras</h2>}
+        {dadosCadastrados.length > 0 && <h2>Itens adicionados</h2>}
 
-      <ul className={styles.lista}>
-        {dadosCadastrados.map((item) => (
-          <li key={item.id} className={styles.linha}>
-            <span className={styles.conteudo}>
-              {item.quantidade}x {item.produto}
-            </span>
-          </li>
-        ))}
-      </ul>
+        <ul className={styles.lista}>
+          {dadosCadastrados.map((item) => (
+            <li key={item.id} className={styles.linha}>
+              <span className={styles.conteudo}>
+                {item.quantidade}x {item.produto}
+              </span>
+
+              {/* 🗑️ BOTÃO DE EXCLUIR */}
+              <button
+                className={styles.deleteBtn}
+                onClick={() => removerItem(item.id)}
+              >
+                🗑️
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

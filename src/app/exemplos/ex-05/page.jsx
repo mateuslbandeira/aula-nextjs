@@ -57,7 +57,7 @@ export default function FormComponent() {
                 <input
                     name="login"
                     type="text"
-                    placeholder='usuário'
+                    placeholder='Usuário'
                     onChange={e => setLogin(e.target.value)}
                 // value={formData.nome}
                 // onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
@@ -65,7 +65,7 @@ export default function FormComponent() {
                 <input
                     name="senha"
                     type="password"
-                    placeholder='senha'
+                    placeholder='Senha'
                     onChange={e => setSenha(e.target.value)}
                 // value={formData.nome}
                 // onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
